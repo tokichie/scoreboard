@@ -56,3 +56,5 @@ target/
 *.swp
 *~
 venv
+.DS_Store
+*.dump
