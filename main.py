@@ -8,7 +8,7 @@ db = SQLAlchemy(app)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return render_template('index.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
