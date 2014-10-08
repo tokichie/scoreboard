@@ -7,7 +7,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["DATABASE_URL"]
 db = SQLAlchemy(app)
 
 @app.route("/")
-def hello():
+def main():
     return render_template('index.html')
 
 if __name__ == "__main__":
