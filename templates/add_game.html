@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %}試合を追加{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <form method="get" action="makegame">
+        <h2 style="padding: 10px">試合を追加</h2>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">先攻</span>
+            <input type="text" class="form-control" name="bat_first" placeholder="先攻チーム名">
+        </div>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">後攻</span>
+            <input type="text" class="form-control" name="bat_last" placeholder="後攻チーム名">
+        </div>
+        <div class="input-group center-block">
+            <button type="submit" class="btn btn-lg btn-success">追加</button>
+        </div>
+    </form>
+</div>
+</div>
+{% endblock %}
+

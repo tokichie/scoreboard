@@ -1,0 +1,14 @@
+.main, .jumbotron{
+    margin-top: 50px;
+}
+.tile{
+    position: relative;
+    height: 150px;
+    width: 80%;
+    background-color: #38a3db;
+    margin: 10px;
+    float: left;
+}
+.input-group{
+    margin-top: 20px;
+}

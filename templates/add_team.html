@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}試合を追加{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <form method="get" action="make_team">
+        <h2 style="padding: 10px">チームを追加</h2>
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" name="team_name" placeholder="チーム名">
+        </div>
+        <div class="input-group center-block">
+            <button type="submit" class="btn btn-lg btn-success">追加</button>
+        </div>
+    </form>
+</div>
+</div>
+{% endblock %}
+

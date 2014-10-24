@@ -4,6 +4,12 @@
   {{ super() }}
 {% endblock %}
 {% block content %}
-  <h1>Index</h1>
+    <table class="table table-striped">
+    {% for game in games %}
+        <tr>
+            <td width="100px"><h2><span class="label label-success">試合中</span></h2></td>
+            <td> {{ game }} </td>
+    {% endfor %}
+    </table>
 {% endblock %}
 
